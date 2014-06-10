@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.structure.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+</head>
+<body>
+<!--Page 1 -->
+<div data-role="page" id="page1">
+<!--content -->
+	<div role="main" class="ui-content" style="text-align:center">
+	<h1>WELCOME</h1>
+	<img src="img/cake.jpg"/>
+	<h3>Web Mobile #KedaiAdikManis</h3>
+	<div data-role="collapsible-set" >
+		<div data-role="collapsible" data-inset="false">
+		<h3>Information</h3>
+		<ul data-role="listview">
+			<li><a href="#page2">Profile</a></li>
+			<li><a href="#page3">Messages</a></li>
+		</ul>
+		</div>
+		<div data-role="collapsible" data-inset="false">
+		<h3>Menus</h3>
+		<ul data-role="listview">
+			<li><a href="#page4">Cake & Pie</a></li>
+			<li><a href="#page5">Coffee & Tea</a></li>
+		</ul>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<h6>| Copyright oj@cute78 |</h6>
+	</div>
+	</div>
+</div>
+<!--Page 2 Profile-->
+<div data-role="page" id="page2">
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Profile</h3>
+	</div>
+<!--content -->
+	<div role="main" class="ui-content">
+		<h2>Bakery Name</h2>
+		#KedaiAdikManis
+		<h2>Location</h2>
+		<img src="img/loc.jpg"/>
+		<p><a href="#pop1" class="ui-btn ui-btn-inline" data-transition="pop" data-rel="popup">Putrajaya</a>
+		<div data-role="popup" id="pop1" data-dismissible="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div data-role="header">
+			<h3>Putrajaya</h3>
+		</div>
+		<div role="main" class="ui-content">
+			<ol>
+			<li>Membolehkan perancangan tenaga kerja dan penentuan saiz perkhidmatan awam yang berkesan melalui maklumat pengurusan sumber manusia;</li>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Kembali</a>
+			<a href="#page3" class="ui-btn ui-corner-all ui-shadow" data-transition="flow">Neighbour</a>
+		</div>
+		</div>	
+		</p>
+		<p><a href="#" data-icon="location" >Cyberjaya</a></p>
+	</div>
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-body-b ui-body">
+			<ul>
+				<li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#page3" data-icon="comment">Messages</a></li>
+				<li><a href="#page4" data-icon="heart">Menus</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+<!--Page 3 Messages-->
+<div data-role="page" id="page3">
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Messages</h3>
+	</div>
+<!--content -->
+	<div role="main" class="ui-content">
+		<h2>Wall & News</h2>
+		<img src="img/offer.jpg" width="100"/>
+		<h2>Neighbour</h2>
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan nama" class="ui-listview">
+			<li>
+			<img src="img/puteri.jpg" width="200" />
+			<strong>Name :</strong>Puteri Alia
+			<p> <strong>Location :</strong>Presint 8, Putrajaya</p>
+			<p>
+			<a href="tel=+60383164035" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Call</a>
+			<a href="whatsup://60133422264" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-inline">Chat </a>
+			<a href="mailto:putri.tajudin@jpa.gov.my" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">E-mail</a>
+			</p>
+		</li>
+			<li>
+			<img src="img/puteri.jpg" width="200" />
+			<strong>Name :</strong>Bakery Stan
+			<p> <strong>Location :</strong>Presint 18, Putrajaya</p>
+			<p>
+			<a href="tel=+60383164035" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Call</a>
+			<a href="whatsup://60133422264" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-inline">Chat </a>
+			<a href="mailto:putri.tajudin@jpa.gov.my" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">E-mail</a>
+			</p>
+		</li>
+	</div>
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-body-b ui-body">
+			<ul>
+				<li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#page2" data-icon="info" >Profile</a></li>
+				<li><a href="#page4" data-icon="heart">Menus</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+<!--Page 4 Cake & Pie-->
+<div data-role="page" id="page4">
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Cake & Pie</h3>
+	</div>
+<!--content -->
+	<div role="main" class="ui-content">
+		<h2>Cake</h2>
+		<img src="img/cake3.jpg" width="100"/>
+		<h2>Pie</h2>
+		<img src="img/cake2.jpg" width="100"/>
+	</div>
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-body-b ui-body">
+			<ul>
+				<li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#page3" data-icon="comment" >Messages</a></li>
+				<li><a href="#page2" data-icon="info">Profile</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+<!--Page 5 Coffee & Tea-->
+<div data-role="page" id="page5">
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Coffee & Tea</h3>
+	</div>
+<!--content -->
+	<div role="main" class="ui-content">
+		<h2>Bakery Name</h2>
+		#KedaiAdikManis
+		<h2>Location</h2>
+		<img src="img/loc.jpg"/>
+		<p><a href="#" data-icon="location" >Putrajaya</a></p>
+		<p><a href="#" data-icon="location" >Cyberjaya</a></p>
+	</div>
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-body-b ui-body">
+			<ul>
+				<li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#page3" data-icon="comment" >Messages</a></li>
+				<li><a href="#page4" data-icon="heart">Menus</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+<!--Page 6 Location-->
+<div data-role="page" id="page6">
+<!--header -->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Location</h3>
+	</div>
+<!--content -->
+	<div role="main" class="ui-content">
+		<h2>Bakery Name</h2>
+		#KedaiAdikManis
+		<h2>Location</h2>
+		<img src="img/loc.jpg"/>
+		<p><a href="#" data-icon="location" >Putrajaya</a></p>
+		<p><a href="#" data-icon="location" >Cyberjaya</a></p>
+	</div>
+	<!--footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-body-b ui-body">
+			<ul>
+				<li><a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#page3" data-icon="comment" >Messages</a></li>
+				<li><a href="#page4" data-icon="heart">Menus</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+</body>
+</html>
